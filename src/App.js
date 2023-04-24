@@ -2,28 +2,28 @@ import React, { useEffect, useState, useCallback } from "react";
 import css from "./App.module.css";
 import BarLoader from "react-spinners/BarLoader";
 import TypewriterComponent from "typewriter-effect";
-import Home from "../src/containers/Home";
+import Main from "./Container/Main/Main";
 
 function App() {
-  // const [loading, setLoading] = useState(false);
-  // const [barWidth, setBarWidth] = useState(150);
+  const [loading, setLoading] = useState(false);
+  const [barWidth, setBarWidth] = useState(150);
 
-  // useEffect(() => {
-  //   setLoading(true);
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //     setTimeout(() => {
-  //       setBarWidth(150);
-  //     }, 7000);
-  //   }, 8000);
-  //   setTimeout(() => {
-  //     setBarWidth(window.innerWidth);
-  //   }, 7400);
-  // }, []);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      setTimeout(() => {
+        setBarWidth(150);
+      }, 7000);
+    }, 8000);
+    setTimeout(() => {
+      setBarWidth(window.innerWidth);
+    }, 7400);
+  }, []);
 
   return (
     <div>
-      {/* {loading ? (
+      {loading ? (
         <>
           <p className={css.introName}>
             <TypewriterComponent
@@ -60,10 +60,10 @@ function App() {
             loading={loading}
             height={1}
           />
-        </> */}
-      {/* ) : ( */}
-      <Home />
-      {/* )} */}
+        </>
+      ) : (
+        <Main />
+      )}
     </div>
   );
 }
