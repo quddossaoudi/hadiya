@@ -1,0 +1,48 @@
+.mainContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 30px;
+}
+.listItem{
+    font-size: 14px;
+}
+.listItem ul{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    align-items: center;
+}
+.listItem ul li{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    color:gray;
+}
+.listItem ul li:hover{
+    color:black;
+}
+.Icon{
+    color: grey;
+    cursor: pointer;
+}
+.Icon:hover{
+    color: black;
+    cursor: pointer;
+}
+.MenuButton{
+    color: grey;
+}
+.MenuButton:hover{
+    color: black;
+}
+.MenuItem{
+    color: grey;
+    background: white;
+    font-size: 14px;
+
+}
+.MenuItem:hover{
+    color: black;
+    background: white;
+}

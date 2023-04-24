@@ -1,45 +1,52 @@
-import {
-  Box,
-  Button,
-  ButtonGroup,
-  Container,
-  Flex,
-  HStack,
-  IconButton,
-  useBreakpointValue,
-  Text,
-} from "@chakra-ui/react";
-import { FiMenu } from "react-icons/fi";
-// import { Logo } from "./Logo";
+import React from "react";
+import { Menu, MenuButton, MenuList, MenuItem, Portal } from "@chakra-ui/react";
+import css from "./Navbar.module.css";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaTiktok } from "react-icons/fa";
+import { BsWhatsapp } from "react-icons/bs";
 
-export const Navbar = () => {
-  const isDesktop = useBreakpointValue({ base: false, lg: true });
+function Navbar() {
   return (
-    <Box as="section" pb={{ base: "12", md: "24" }}>
-      <Box as="nav" bg="bg-surface" boxShadow="sm">
-        <Container py={{ base: "4", lg: "5" }}>
-          <HStack spacing="10" justify="space-between">
-            <Text>Hadiya Ali</Text>
-            {isDesktop ? (
-              <Flex justify="space-between" flex="1">
-                <ButtonGroup variant="link" spacing="8">
-                  {["Product", "Pricing", "Resources", "Support"].map(
-                    (item) => (
-                      <Button key={item}>{item}</Button>
-                    )
-                  )}
-                </ButtonGroup>
-              </Flex>
-            ) : (
-              <IconButton
-                variant="ghost"
-                icon={<FiMenu fontSize="1.25rem" />}
-                aria-label="Open Menu"
-              />
-            )}
-          </HStack>
-        </Container>
-      </Box>
-    </Box>
+    <div className={css.mainContainer}>
+      <div className={css.Container}>
+        <p>Hadiya Ali</p>
+      </div>
+      <div className={css.listItem}>
+        <ul>
+          <a href="#">
+            <Menu>
+              <MenuButton className={css.MenuButton}>Projects</MenuButton>
+              <Portal>
+                <MenuList border="none">
+                  <MenuItem className={css.MenuItem}>Commercial</MenuItem>
+                  <MenuItem className={css.MenuItem}>Weddings</MenuItem>
+                  <MenuItem className={css.MenuItem}>Interior Design</MenuItem>
+                  <MenuItem className={css.MenuItem}>Model Shoot</MenuItem>
+                </MenuList>
+              </Portal>
+            </Menu>
+          </a>
+          <a href="#">
+            <li>About</li>
+          </a>
+          <a href="#">
+            <li>Contact</li>
+          </a>
+          <span className={css.Icon}>
+            <AiFillInstagram />
+          </span>
+
+          <span className={css.Icon}>
+            <FaTiktok />
+          </span>
+
+          <span className={css.Icon}>
+            <BsWhatsapp />
+          </span>
+        </ul>
+      </div>
+    </div>
   );
-};
+}
+
+export default Navbar;
