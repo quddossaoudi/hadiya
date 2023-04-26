@@ -5,25 +5,25 @@ import TypewriterComponent from "typewriter-effect";
 import Main from "./Container/Main/Main";
 
 function App() {
-  const [loading, setLoading] = useState(false);
-  const [barWidth, setBarWidth] = useState(150);
+  // const [loading, setLoading] = useState(false);
+  // const [barWidth, setBarWidth] = useState(150);
 
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      setTimeout(() => {
-        setBarWidth(150);
-      }, 7000);
-    }, 8000);
-    setTimeout(() => {
-      setBarWidth(window.innerWidth);
-    }, 7400);
-  }, []);
+  // useEffect(() => {
+  //   setLoading(true);
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //     setTimeout(() => {
+  //       setBarWidth(150);
+  //     }, 7000);
+  //   }, 8000);
+  //   setTimeout(() => {
+  //     setBarWidth(window.innerWidth);
+  //   }, 7400);
+  // }, []);
 
   return (
     <div>
-      {loading ? (
+      {/* {loading ? (
         <>
           <p className={css.introName}>
             <TypewriterComponent
@@ -45,8 +45,8 @@ function App() {
                   .start();
               }}
             />
-          </p>
-          <BarLoader
+          </p> */}
+      {/* <BarLoader
             color="#000"
             cssOverride={{
               position: "fixed",
@@ -61,9 +61,9 @@ function App() {
             height={1}
           />
         </>
-      ) : (
-        <Main />
-      )}
+      ) : ( */}
+      <Main />
+      {/* )} */}
     </div>
   );
 }

@@ -1,61 +1,88 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import css from "./Home.module.css";
+import One from "../../assets/1.jpg";
+import Two from "../../assets/2.jpg";
+import Three from "../../assets/3.jpg";
+
+import "./Home.scss";
 
 function Home() {
-  const sectionRef = useRef(null);
-  const triggerRef = useRef(null);
+  // const sectionRef = useRef(null);
+  // const triggerRef = useRef(null);
 
-  gsap.registerPlugin(ScrollTrigger);
+  // gsap.registerPlugin(ScrollTrigger);
 
-  useEffect(() => {
-    const pin = gsap.fromTo(
-      sectionRef.current,
-      {
-        translateX: 0,
-      },
-      {
-        translateX: "-300vw",
-        ease: "none",
-        duration: 1,
-        scrollTrigger: {
-          trigger: triggerRef.current,
-          start: "top top",
-          end: "2000 top",
-          scrub: 0.6,
-          pin: true,
-        },
-      }
-    );
+  // useEffect(() => {
+  //   const pin = gsap.fromTo(
+  //     sectionRef.current,
+  //     {
+  //       translateX: 0,
+  //     },
+  //     {
+  //       translateX: "-300vw",
+  //       ease: "none",
+  //       duration: 1,
+  //       scrollTrigger: {
+  //         trigger: triggerRef.current,
+  //         start: "top top",
+  //         end: "2000 top",
+  //         scrub: 0.6,
+  //         pin: true,
+  //       },
+  //     }
+  //   );
 
-    return () => {
-      pin.kill();
-    };
-  }, []);
+  //   return () => {
+  //     pin.kill();
+  //   };
+  // }, []);
 
   return (
-    <section className={css.scrollSectionOuter}>
-      <div ref={triggerRef}>
-        <div ref={sectionRef} className={css.scrollSectionInner}>
-          <div className={css.scrollSection}>
-            <h3>section 1</h3>
-          </div>
-          <div className={css.scrollSection}>
-            <h3>section 2</h3>
-          </div>
-          <div className={css.scrollSection}>
-            <h3>section 3</h3>
-          </div>
-          <div className={css.scrollSection}>
-            <h3>section 4</h3>
-          </div>
-          <div className={css.scrollSection}>
-            <h3>section 5</h3>
-          </div>
+    <div className="container">
+      <div className="horizontal-scroll-wrapper squares">
+        <div>
+          <img src={One} />
+        </div>
+        <div>
+          <img src={Two} />
+        </div>
+        <div>
+          <img src={Three} />
+        </div>
+        <div>
+          <img src={Two} />
+        </div>
+        <div>
+          <img src={One} />
+        </div>
+        <div>
+          <img src={Three} />
+        </div>
+        <div>
+          <img src={One} />
+        </div>
+        <div>
+          <img src={One} />
+        </div>
+        <div>
+          <img src={One} />
+        </div>
+
+        <div>
+          <img src={One} />
+        </div>
+        <div>
+          <img src={One} />
+        </div>
+        <div>
+          <img src={One} />
+        </div>
+        <div>
+          <img src={One} />
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
