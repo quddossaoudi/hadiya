@@ -17,23 +17,46 @@ import Fifteen from "../../assets/Portraits/Portrait15.png";
 import Sixteen from "../../assets/Portraits/Portrait16.jpg";
 import Seventeen from "../../assets/Portraits/Portrait17.png";
 import Eighteen from "../../assets/Portraits/Portrait18.jpg";
+import Nineteen from "../../assets/Portraits/Portraits19.JPG";
+import Twenty from "../../assets/Portraits/Portraits20.jpg";
+import TwentyOne from "../../assets/Portraits/Portraits21.JPG";
+import TwentyTwo from "../../assets/Portraits/Portraits22.JPG";
+import TwentyThree from "../../assets/Portraits/Party1.png.PNG";
+import TwentyFour from "../../assets/Portraits/Party2.png.PNG";
+import TwentyFive from "../../assets/Portraits/Party3.png.PNG";
+import TwentySix from "../../assets/Portraits/Party4.png.PNG";
+import TwentySeven from "../../assets/Portraits/Party5.png.PNG";
+
 import css from "./Home.module.css";
 
 function Home() {
   return (
     <section>
       <div className={css.items}>
-        <div className={`${css.item} ${css.item1}`}>
-          <img src={One} />
-        </div>
         <div className={`${css.item} ${css.item2}`}>
           <img src={Two} />
         </div>
+        <div className={`${css.item} ${css.item7}`}>
+          <img src={TwentyOne} />
+        </div>
+        <div className={`${css.item} ${css.item18}`}>
+          <img src={TwentySeven} />
+        </div>
+        <div className={`${css.item} ${css.item14}`}>
+          <img src={Fourteen} />
+        </div>
+        <div className={`${css.item} ${css.item1}`}>
+          <img src={One} />
+        </div>
+
         <div className={`${css.item} ${css.item3}`}>
           <img src={Three} />
         </div>
         <div className={`${css.item} ${css.item4}`}>
           <img src={Four} />
+        </div>
+        <div className={`${css.item} ${css.item18}`}>
+          <img src={TwentySix} />
         </div>
         <div className={`${css.item} ${css.item5}`}>
           <img src={Five} />
@@ -44,6 +67,9 @@ function Home() {
         <div className={`${css.item} ${css.item7}`}>
           <img src={Seven} />
         </div>
+        <div className={`${css.item} ${css.item7}`}>
+          <img src={Twenty} />
+        </div>
         <div className={`${css.item} ${css.item8}`}>
           <img src={Eight} />
         </div>
@@ -52,6 +78,9 @@ function Home() {
         </div>
         <div className={`${css.item} ${css.item10}`}>
           <img src={Ten} />
+        </div>
+        <div className={`${css.item} ${css.item10}`}>
+          <img src={TwentyTwo} />
         </div>
         <div className={`${css.item} ${css.item11}`}>
           <img src={Eleven} />
@@ -62,11 +91,12 @@ function Home() {
         <div className={`${css.item} ${css.item13}`}>
           <img src={Thirteen} />
         </div>
-        <div className={`${css.item} ${css.item14}`}>
-          <img src={Fourteen} />
-        </div>
+
         <div className={`${css.item} ${css.item15}`}>
           <img src={Fifteen} />
+        </div>
+        <div className={`${css.item} ${css.item15}`}>
+          <img src={Nineteen} />
         </div>
         <div className={`${css.item} ${css.item16}`}>
           <img src={Sixteen} />
@@ -76,6 +106,15 @@ function Home() {
         </div>
         <div className={`${css.item} ${css.item18}`}>
           <img src={Eighteen} />
+        </div>
+        <div className={`${css.item} ${css.item18}`}>
+          <img src={TwentyThree} />
+        </div>
+        <div className={`${css.item} ${css.item18}`}>
+          <img src={TwentyFour} />
+        </div>
+        <div className={`${css.item} ${css.item18}`}>
+          <img src={TwentyFive} />
         </div>
       </div>
     </section>

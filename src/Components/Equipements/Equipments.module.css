@@ -83,3 +83,8 @@ section{
   .item:nth-child(9n+9) {
     background: #424760;
   }
+  .item img:hover{
+    opacity: 1;
+  transform: translateY(0%);
+  transition: opacity .65s cubic-bezier(.05,.2,.1,1) .15s,transform .65s cubic-bezier(.05,.2,.1,1) .15s;
+  }

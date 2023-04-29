@@ -1,11 +1,24 @@
-import React from "react";
-import { Menu, MenuButton, MenuList, MenuItem, Portal } from "@chakra-ui/react";
+import React, { useState } from "react";
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  Portal,
+  Box,
+  Button,
+  useColorMode,
+} from "@chakra-ui/react";
 import css from "./Navbar.module.css";
 import { AiFillInstagram } from "react-icons/ai";
+import { BsFacebook } from "react-icons/bs";
 import { FaTiktok } from "react-icons/fa";
-import { BsWhatsapp } from "react-icons/bs";
+import { BsWhatsapp, BsMoon } from "react-icons/bs";
+import { MdSunny } from "react-icons/md";
 
 function Navbar() {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <>
       <div className={css.mainContainer}>
@@ -45,16 +58,34 @@ function Navbar() {
               <li>Testimonials</li>
             </a>
             <span className={css.Icon}>
-              <AiFillInstagram />
+              <a
+                href="https://www.facebook.com/hadiyasphotography/"
+                target="_blank"
+              >
+                <BsFacebook />
+              </a>
             </span>
-
             <span className={css.Icon}>
-              <FaTiktok />
+              <a
+                href="https://www.instagram.com/hadiyaali_photography/"
+                target="_blank"
+              >
+                <AiFillInstagram />
+              </a>
             </span>
-
             <span className={css.Icon}>
-              <BsWhatsapp />
+              <a href="https://www.tiktok.com/@ali.hadiya" target="_blank">
+                <FaTiktok />
+              </a>
             </span>
+            <span className={css.Icon}>
+              <a href="https://wa.me/+60167518350" target="_blank">
+                <BsWhatsapp />
+              </a>
+            </span>
+            <Box className={css.box} cursor="pointer" onClick={toggleColorMode}>
+              {colorMode === "light" ? <MdSunny /> : <BsMoon />}
+            </Box>
           </ul>
         </div>
       </div>
