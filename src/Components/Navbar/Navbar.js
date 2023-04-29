@@ -25,8 +25,12 @@ function Navbar() {
                     <MenuItem className={css.MenuItem}>
                       <a href="/weddings">Weddings</a>
                     </MenuItem>
-                    <MenuItem className={css.MenuItem}>Products</MenuItem>
-                    <MenuItem className={css.MenuItem}>Food</MenuItem>
+                    <MenuItem className={css.MenuItem}>
+                      <a href="/products">Brands</a>
+                    </MenuItem>
+                    <MenuItem className={css.MenuItem}>
+                      <a href="/food">Food</a>
+                    </MenuItem>
                   </MenuList>
                 </Portal>
               </Menu>

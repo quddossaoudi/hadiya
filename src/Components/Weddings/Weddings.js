@@ -17,6 +17,14 @@ import Fifteen from "../../assets/Weddings/Wedding15.png";
 import Sixteen from "../../assets/Weddings/Wedding16.jpg";
 import Seventeen from "../../assets/Weddings/Wedding17.jpg";
 import Eighteen from "../../assets/Weddings/Wedding18.png";
+import Nineteen from "../../assets/Weddings/Wedding19.png";
+import Twenty from "../../assets/Weddings/Wedding20.png";
+import TwentyOne from "../../assets/Weddings/Wedding21.png";
+import TwentyTwo from "../../assets/Weddings/Wedding22.png";
+import TwentyThree from "../../assets/Weddings/Wedding23.png";
+import TwentyFour from "../../assets/Weddings/Wedding24.png";
+import TwentyFive from "../../assets/Weddings/Wedding25.png";
+
 import css from "./Weddings.module.css";
 
 function Weddings() {
@@ -77,6 +85,27 @@ function Weddings() {
           </div>
           <div className={`${css.item} ${css.item18}`}>
             <img src={Eighteen} />
+          </div>
+          <div className={`${css.item} ${css.item19}`}>
+            <img src={Nineteen} />
+          </div>
+          <div className={`${css.item} ${css.item20}`}>
+            <img src={Twenty} />
+          </div>
+          <div className={`${css.item} ${css.item21}`}>
+            <img src={TwentyOne} />
+          </div>
+          <div className={`${css.item} ${css.item22}`}>
+            <img src={TwentyTwo} />
+          </div>
+          <div className={`${css.item} ${css.item23}`}>
+            <img src={TwentyThree} />
+          </div>
+          <div className={`${css.item} ${css.item24}`}>
+            <img src={TwentyFour} />
+          </div>
+          <div className={`${css.item} ${css.item25}`}>
+            <img src={TwentyFive} />
           </div>
         </div>
       </section>
