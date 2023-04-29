@@ -3,12 +3,16 @@ import Navbar from "../../Components/Navbar/Navbar";
 import Home from "../../Components/Home/Home";
 import Contact from "../../Components/Contact/Contact";
 import About from "../../Components/About/About";
+import Weddings from "../../Components/Weddings/Weddings";
 
 function Main() {
   let component;
   switch (window.location.pathname) {
     case "/":
       component = <Home />;
+      break;
+    case "/weddings":
+      component = <Weddings />;
       break;
     case "/about":
       component = <About />;

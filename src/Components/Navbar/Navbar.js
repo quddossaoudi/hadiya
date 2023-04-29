@@ -14,17 +14,19 @@ function Navbar() {
         </div>
         <div className={css.listItem}>
           <ul>
+            <a href="/">
+              <li>Home</li>
+            </a>
             <a href="#">
               <Menu>
                 <MenuButton className={css.MenuButton}>Projects</MenuButton>
                 <Portal>
                   <MenuList border="none">
-                    <MenuItem className={css.MenuItem}>Commercial</MenuItem>
-                    <MenuItem className={css.MenuItem}>Weddings</MenuItem>
                     <MenuItem className={css.MenuItem}>
-                      Interior Design
+                      <a href="/weddings">Weddings</a>
                     </MenuItem>
-                    <MenuItem className={css.MenuItem}>Model Shoot</MenuItem>
+                    <MenuItem className={css.MenuItem}>Products</MenuItem>
+                    <MenuItem className={css.MenuItem}>Food</MenuItem>
                   </MenuList>
                 </Portal>
               </Menu>
@@ -33,7 +35,7 @@ function Navbar() {
               <li>About</li>
             </a>
             <a href="/contact">
-              <li>Contact</li>
+              <li>Testimonials</li>
             </a>
             <span className={css.Icon}>
               <AiFillInstagram />
