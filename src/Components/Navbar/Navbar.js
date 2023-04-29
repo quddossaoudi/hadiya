@@ -38,6 +38,9 @@ function Navbar() {
             <a href="/about">
               <li>About</li>
             </a>
+            <a href="/equipments">
+              <li>Equipments</li>
+            </a>
             <a href="/contact">
               <li>Testimonials</li>
             </a>

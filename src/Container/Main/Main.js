@@ -6,6 +6,7 @@ import About from "../../Components/About/About";
 import Weddings from "../../Components/Weddings/Weddings";
 import Products from "../../Components/Products/Products";
 import Food from "../../Components/Food/Food";
+import Equipments from "../../Components/Equipements/Equipments";
 
 function Main() {
   let component;
@@ -24,6 +25,9 @@ function Main() {
       break;
     case "/about":
       component = <About />;
+      break;
+    case "/equipments":
+      component = <Equipments />;
       break;
     case "/contact":
       component = <Contact />;
