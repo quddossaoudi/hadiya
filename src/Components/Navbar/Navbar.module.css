@@ -17,33 +17,12 @@
     text-decoration: none;
     list-style: none;
     cursor: pointer;
-    color:gray;
 }
-.listItem ul li:hover{
-    color:black;
-}
+
 .Icon{
     color: grey;
     cursor: pointer;
 }
-.Icon:hover{
-    color: black;
-    cursor: pointer;
-}
-.MenuButton{
-    color: grey;
-}
-.MenuButton:hover{
-    color: black;
-}
-.MenuItem a{
-    color: grey;
-    font-size: 14px;
-}
-a:hover{
-    color: black;
-}
-.active{
-    color: black;
-}
+
+
 

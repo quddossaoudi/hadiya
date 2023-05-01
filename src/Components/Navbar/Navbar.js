@@ -8,6 +8,7 @@ import {
   Box,
   Button,
   useColorMode,
+  Text,
 } from "@chakra-ui/react";
 import css from "./Navbar.module.css";
 import { AiFillInstagram } from "react-icons/ai";
@@ -28,61 +29,163 @@ function Navbar() {
         <div className={css.listItem}>
           <ul>
             <a href="/">
-              <li>Home</li>
+              <Text
+                color="Gray"
+                _hover={
+                  colorMode === "light"
+                    ? { color: "Black" }
+                    : { color: "White" }
+                }
+              >
+                Home
+              </Text>
             </a>
             <a href="#">
               <Menu>
-                <MenuButton className={css.MenuButton}>Projects</MenuButton>
+                <MenuButton
+                  color="Gray"
+                  _hover={
+                    colorMode === "light"
+                      ? { color: "Black" }
+                      : { color: "White" }
+                  }
+                >
+                  Projects
+                </MenuButton>
                 <Portal>
                   <MenuList border="none">
                     <MenuItem className={css.MenuItem}>
-                      <a href="/weddings">Weddings</a>
+                      <a href="/weddings">
+                        <Text
+                          color="Gray"
+                          _hover={
+                            colorMode === "light"
+                              ? { color: "Black" }
+                              : { color: "White" }
+                          }
+                        >
+                          Weddings
+                        </Text>
+                      </a>
                     </MenuItem>
                     <MenuItem className={css.MenuItem}>
-                      <a href="/products">Brands</a>
+                      <a href="/products">
+                        <Text
+                          color="Gray"
+                          _hover={
+                            colorMode === "light"
+                              ? { color: "Black" }
+                              : { color: "White" }
+                          }
+                        >
+                          Brands
+                        </Text>
+                      </a>
                     </MenuItem>
                     <MenuItem className={css.MenuItem}>
-                      <a href="/food">Food</a>
+                      <a href="/food">
+                        {" "}
+                        <Text
+                          color="Gray"
+                          _hover={
+                            colorMode === "light"
+                              ? { color: "Black" }
+                              : { color: "White" }
+                          }
+                        >
+                          Food
+                        </Text>
+                      </a>
                     </MenuItem>
                   </MenuList>
                 </Portal>
               </Menu>
             </a>
-            <a href="/about">
-              <li>About</li>
-            </a>
+            <span>
+              <a href="/about">
+                <Text
+                  color="Gray"
+                  _hover={
+                    colorMode === "light"
+                      ? { color: "Black" }
+                      : { color: "White" }
+                  }
+                >
+                  About
+                </Text>
+              </a>
+            </span>
             <a href="/equipments">
-              <li>Equipments</li>
+              <Text
+                color="Gray"
+                _hover={
+                  colorMode === "light"
+                    ? { color: "Black" }
+                    : { color: "White" }
+                }
+              >
+                Equipments
+              </Text>
             </a>
-            <a href="/contact">
-              <li>Testimonials</li>
+            <a href="/testimonials">
+              <Text
+                color="Gray"
+                _hover={
+                  colorMode === "light"
+                    ? { color: "Black" }
+                    : { color: "White" }
+                }
+              >
+                Testimonials
+              </Text>
             </a>
-            <span className={css.Icon}>
+            <Box
+              color="Gray"
+              _hover={
+                colorMode === "light" ? { color: "Black" } : { color: "White" }
+              }
+            >
               <a
                 href="https://www.facebook.com/hadiyasphotography/"
                 target="_blank"
               >
                 <BsFacebook />
               </a>
-            </span>
-            <span className={css.Icon}>
+            </Box>
+            <Box
+              color="Gray"
+              _hover={
+                colorMode === "light" ? { color: "Black" } : { color: "White" }
+              }
+            >
               <a
                 href="https://www.instagram.com/hadiyaali_photography/"
                 target="_blank"
               >
                 <AiFillInstagram />
               </a>
-            </span>
-            <span className={css.Icon}>
+            </Box>
+            <Box
+              color="Gray"
+              _hover={
+                colorMode === "light" ? { color: "Black" } : { color: "White" }
+              }
+              className={colorMode === "light" ? css.Icon : css.IconDarkMode}
+            >
               <a href="https://www.tiktok.com/@ali.hadiya" target="_blank">
                 <FaTiktok />
               </a>
-            </span>
-            <span className={css.Icon}>
+            </Box>
+            <Box
+              color="Gray"
+              _hover={
+                colorMode === "light" ? { color: "Black" } : { color: "White" }
+              }
+            >
               <a href="https://wa.me/+60167518350" target="_blank">
                 <BsWhatsapp />
               </a>
-            </span>
+            </Box>
             <Box className={css.box} cursor="pointer" onClick={toggleColorMode}>
               {colorMode === "light" ? <MdSunny /> : <BsMoon />}
             </Box>
