@@ -10,8 +10,8 @@ section{
   padding: 0;
 }
 .items {
-  height: 700px;
-  padding: 20px;
+  height: 88vh;
+  padding: 0px 20px 20px 20px; 
   width: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -33,7 +33,7 @@ section{
 
 .item {
   width: 550px;
-  height: calc(100% - 40px);
+  height: calc(100% - -10px);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;

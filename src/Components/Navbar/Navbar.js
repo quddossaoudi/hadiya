@@ -9,6 +9,7 @@ import {
   Button,
   useColorMode,
   Text,
+  Image,
 } from "@chakra-ui/react";
 import css from "./Navbar.module.css";
 import { AiFillInstagram } from "react-icons/ai";
@@ -16,6 +17,8 @@ import { BsFacebook } from "react-icons/bs";
 import { FaTiktok } from "react-icons/fa";
 import { BsWhatsapp, BsMoon } from "react-icons/bs";
 import { MdSunny } from "react-icons/md";
+import LogoDark from "../../assets/Logo/logoDark.png";
+import LogoWhite from "../../assets/Logo/logoWhite.png";
 
 function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -24,7 +27,11 @@ function Navbar() {
     <>
       <div className={css.mainContainer}>
         <div className={css.Container}>
-          <p>Hadiya Ali</p>
+          {colorMode === "light" ? (
+            <Image src={LogoDark} w="40px" h="40px" />
+          ) : (
+            <Image src={LogoWhite} w="40px" h="40px" />
+          )}
         </div>
         <div className={css.listItem}>
           <ul>
@@ -84,7 +91,6 @@ function Navbar() {
                     </MenuItem>
                     <MenuItem className={css.MenuItem}>
                       <a href="/food">
-                        {" "}
                         <Text
                           color="Gray"
                           _hover={
