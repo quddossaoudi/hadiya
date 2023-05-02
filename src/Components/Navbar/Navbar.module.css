@@ -7,6 +7,10 @@
 .listItem{
     font-size: 14px;
 }
+.MenuItem{    
+    font-size: 14px;
+}
+
 .listItem ul{
     display: flex;
     justify-content: space-between;

@@ -47,6 +47,8 @@ section{
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
+
+
   
   .item:nth-child(9n+1) {
     background: #fff8ef;
