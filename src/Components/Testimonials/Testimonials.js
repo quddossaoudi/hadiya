@@ -75,7 +75,7 @@ function Testimonials() {
                       </p>
                       <div className="name">
                         <h4>Sohayb Saoudi</h4>
-                        <p>Modal</p>
+                        <p>Model</p>
                       </div>
                     </div>
                   </div>

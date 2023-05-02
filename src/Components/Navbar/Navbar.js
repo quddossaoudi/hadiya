@@ -21,6 +21,11 @@ import {
   DrawerContent,
   DrawerCloseButton,
   Input,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
 } from "@chakra-ui/react";
 import { FiMenu } from "react-icons/fi";
 import css from "./Navbar.module.css";
@@ -244,177 +249,86 @@ function Navbar() {
                 finalFocusRef={btnRef}
               >
                 <DrawerOverlay />
-                <DrawerContent>
+                <DrawerContent p="25px">
                   <ul>
                     <a href="/">
-                      <Text
-                        color="Gray"
-                        _hover={
-                          colorMode === "light"
-                            ? { color: "Black" }
-                            : { color: "White" }
-                        }
-                      >
-                        Home
-                      </Text>
+                      <Text mb="15px">Home</Text>
                     </a>
-                    <a href="#">
-                      <Menu>
-                        <MenuButton
-                          color="Gray"
-                          _hover={
-                            colorMode === "light"
-                              ? { color: "Black" }
-                              : { color: "White" }
-                          }
-                        >
-                          Projects
-                        </MenuButton>
-                        <Portal>
-                          <MenuList border="none">
-                            <MenuItem className={css.MenuItem}>
-                              <a href="/weddings">
-                                <Text
-                                  color="Gray"
-                                  _hover={
-                                    colorMode === "light"
-                                      ? { color: "Black" }
-                                      : { color: "White" }
-                                  }
-                                >
-                                  Weddings
-                                </Text>
-                              </a>
-                            </MenuItem>
-                            <MenuItem className={css.MenuItem}>
-                              <a href="/products">
-                                <Text
-                                  color="Gray"
-                                  _hover={
-                                    colorMode === "light"
-                                      ? { color: "Black" }
-                                      : { color: "White" }
-                                  }
-                                >
-                                  Brands
-                                </Text>
-                              </a>
-                            </MenuItem>
-                            <MenuItem className={css.MenuItem}>
-                              <a href="/food">
-                                <Text
-                                  color="Gray"
-                                  _hover={
-                                    colorMode === "light"
-                                      ? { color: "Black" }
-                                      : { color: "White" }
-                                  }
-                                >
-                                  Food
-                                </Text>
-                              </a>
-                            </MenuItem>
-                          </MenuList>
-                        </Portal>
-                      </Menu>
-                    </a>
+                    <Accordion
+                      mb="15px"
+                      border="0px solid transparent"
+                      allowMultiple
+                    >
+                      <AccordionItem>
+                        <h2>
+                          <AccordionButton p="0px">
+                            <Box>Projects</Box>
+                            <AccordionIcon />
+                          </AccordionButton>
+                        </h2>
+                        <AccordionPanel p="0px 4px">
+                          <a href="#">
+                            <a href="/weddings">
+                              <Text m="15px 0px">Weddings</Text>
+                            </a>
+                            <a href="/products">
+                              <Text mb="15px">Brands</Text>
+                            </a>
+                            <a href="/food">
+                              <Text mb="10px">Food</Text>
+                            </a>
+                          </a>
+                        </AccordionPanel>
+                      </AccordionItem>
+                    </Accordion>
+
                     <span>
                       <a href="/about">
-                        <Text
-                          color="Gray"
-                          _hover={
-                            colorMode === "light"
-                              ? { color: "Black" }
-                              : { color: "White" }
-                          }
-                        >
-                          About
-                        </Text>
+                        <Text mb="15px">About</Text>
                       </a>
                     </span>
                     <a href="/equipments">
-                      <Text
-                        color="Gray"
-                        _hover={
-                          colorMode === "light"
-                            ? { color: "Black" }
-                            : { color: "White" }
-                        }
-                      >
-                        Equipments
-                      </Text>
+                      <Text mb="15px">Equipments</Text>
                     </a>
                     <a href="/testimonials">
-                      <Text
-                        color="Gray"
-                        _hover={
-                          colorMode === "light"
-                            ? { color: "Black" }
-                            : { color: "White" }
-                        }
-                      >
-                        Testimonials
-                      </Text>
+                      <Text mb="15px">Testimonials</Text>
                     </a>
+
                     <Box
-                      color="Gray"
-                      _hover={
-                        colorMode === "light"
-                          ? { color: "Black" }
-                          : { color: "White" }
-                      }
+                      display="flex"
+                      alignItems="center"
+                      justifyContent="space-between"
+                      mt="25px"
                     >
-                      <a
-                        href="https://www.facebook.com/hadiyasphotography/"
-                        target="_blank"
-                      >
-                        <BsFacebook />
-                      </a>
-                    </Box>
-                    <Box
-                      color="Gray"
-                      _hover={
-                        colorMode === "light"
-                          ? { color: "Black" }
-                          : { color: "White" }
-                      }
-                    >
-                      <a
-                        href="https://www.instagram.com/hadiyaali_photography/"
-                        target="_blank"
-                      >
-                        <AiFillInstagram />
-                      </a>
-                    </Box>
-                    <Box
-                      color="Gray"
-                      _hover={
-                        colorMode === "light"
-                          ? { color: "Black" }
-                          : { color: "White" }
-                      }
-                      className={
-                        colorMode === "light" ? css.Icon : css.IconDarkMode
-                      }
-                    >
-                      <a
-                        href="https://www.tiktok.com/@ali.hadiya"
-                        target="_blank"
-                      >
-                        <FaTiktok />
-                      </a>
-                    </Box>
-                    <Box
-                      color="Gray"
-                      _hover={
-                        colorMode === "light"
-                          ? { color: "Black" }
-                          : { color: "White" }
-                      }
-                    >
-                      <a href="https://wa.me/+60167518350" target="_blank">
-                        <BsWhatsapp />
-                      </a>
+                      <Box>
+                        <a
+                          href="https://www.facebook.com/hadiyasphotography/"
+                          target="_blank"
+                        >
+                          <BsFacebook />
+                        </a>
+                      </Box>
+                      <Box>
+                        <a
+                          href="https://www.instagram.com/hadiyaali_photography/"
+                          target="_blank"
+                        >
+                          <AiFillInstagram />
+                        </a>
+                      </Box>
+                      <Box>
+                        <a
+                          href="https://www.tiktok.com/@ali.hadiya"
+                          target="_blank"
+                        >
+                          <FaTiktok />
+                        </a>
+                      </Box>
+                      <Box>
+                        <a href="https://wa.me/+60167518350" target="_blank">
+                          <BsWhatsapp />
+                        </a>
+                      </Box>
                     </Box>
                   </ul>
 
