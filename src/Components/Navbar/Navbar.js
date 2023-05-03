@@ -269,13 +269,13 @@ function Navbar() {
                         <AccordionPanel p="0px 4px">
                           <a href="#">
                             <a href="/weddings">
-                              <Text m="15px 0px">Weddings</Text>
+                              <Text m="15px 0px">• Weddings</Text>
                             </a>
                             <a href="/products">
-                              <Text mb="15px">Brands</Text>
+                              <Text mb="15px">• Brands</Text>
                             </a>
                             <a href="/food">
-                              <Text mb="10px">Food</Text>
+                              <Text mb="0px">• Food</Text>
                             </a>
                           </a>
                         </AccordionPanel>

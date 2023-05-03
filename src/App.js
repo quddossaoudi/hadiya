@@ -45,8 +45,8 @@ function App() {
                   .start();
               }}
             />
-          </p> */}
-      {/* <BarLoader
+          </p>
+          <BarLoader
             color="#000"
             cssOverride={{
               position: "fixed",
