@@ -20,7 +20,7 @@ function About() {
             Communication with a specialization in photography in Malaysia. I
             have four years of experience as a photographer and I'm skilled in
             using Adobe Lightroom, Photoshop, Premiere Rush, and Procreate. I
-            also enjoy creating videos.
+            also enjoy creating videos
           </Text>
           <Text mt="10px">
             If you're interested in working with me, feel free to connect. I
