@@ -15,13 +15,16 @@ function About() {
             Hadiya Ali, is a creative photgrapher and filmmaker, residing in
             Malaysia, Kuala Lumpur.
           </Text>
-          <Text as="p">
-            Hi, I'm Hadiya Ali, a passionate photographer and filmmaker with
-            over 5 years of experience in the industry. I specialize in
-            capturing stunning visuals that tell a story and leave a lasting
-            impression. I believe that every moment is unique, and my goal is to
-            capture those special moments in a way that highlights the beauty
-            and emotion of the moment.
+          <Text as="p" mt="20px">
+            Hi there! My name is Hadiya Ali and I'm currently studying Visual
+            Communication with a specialization in photography in Malaysia. I
+            have four years of experience as a photographer and I'm skilled in
+            using Adobe Lightroom, Photoshop, Premiere Rush, and Procreate. I
+            also enjoy creating videos.
+          </Text>
+          <Text mt="10px">
+            If you're interested in working with me, feel free to connect. I
+            hope you like my work!
           </Text>
           <Box
             margin="25px 0px"
